@@ -4,7 +4,7 @@ namespace InfoGain
     public class VariablesAndConstantsExample
     {
         // Declare and initialize a variable
-        int age = 25;
+        static int age = 25;
         // Declare and initialize a constant
         const double pi = 3.14159;
         public void VariablesAndConstants()
@@ -53,7 +53,8 @@ namespace InfoGain
         }
         public static int getAge()
         {
-            return 25; // This is just a placeholder for demonstration purposes.
+            return age; // This is just a placeholder for demonstration purposes.
         }
     }
 }
+
