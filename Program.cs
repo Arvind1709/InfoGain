@@ -8,9 +8,12 @@ namespace InfoGain
     {
         public static void Main(string[] args)
         {
-            MyFirstProgramme programme = new MyFirstProgramme();
-            programme.FirstProgramme();
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Start of console program!");
+            Console.WriteLine("--------------------------");
+
+
+            Console.WriteLine("--------------------------");
+            Console.WriteLine("End of console program!");
         }
     }
 }
