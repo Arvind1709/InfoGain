@@ -87,5 +87,67 @@ namespace InfoGain
                 default: return "Invalid day";
             }
         }
+
+        public double BasicCalculatorUsingSwitch()
+        {
+            // Input first number
+            Console.Write("Enter first number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            // Input operator
+            Console.Write("Enter operator (+, -, *, /): ");
+            char op = Convert.ToChar(Console.ReadLine());
+
+            // Input second number
+            Console.Write("Enter second number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            double result;
+
+            // Switch to perform calculation
+            switch (op)
+            {
+                case '+':
+                    result = num1 + num2;
+                    Console.WriteLine("Result: " + result);
+                    return result;
+                //break;
+
+                case '-':
+                    result = num1 - num2;
+                    Console.WriteLine("Result: " + result);
+                    return result;
+                //break;
+
+                case '*':
+                    result = num1 * num2;
+                    Console.WriteLine("Result: " + result);
+                    return result;
+                //break;
+
+                case '/':
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        Console.WriteLine("Result: " + result);
+                        return result;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: Cannot divide by zero.");
+                        return 0.0;
+                        // break;
+                    }
+
+
+                default:
+                    Console.WriteLine("Invalid operator. Please use +, -, *, or /.");
+                    return 0.0;
+                    // break;
+
+            }
+            //Console.WriteLine("Thank you for using the calculator!");
+        }
     }
+
 }
