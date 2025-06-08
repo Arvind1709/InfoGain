@@ -30,6 +30,7 @@ namespace InfoGain
             Console.WriteLine("x && y: " + (x && y));  // AND
             Console.WriteLine("x || y: " + (x || y));  // OR
             Console.WriteLine("!x: " + (!x));          // NOT
+            Console.WriteLine("x || y Arvind: " + (y || x));  // OR
 
             Console.WriteLine("\n========== Bitwise Operators ==========");
             // Bitwise Operators: Work on binary representations of numbers
